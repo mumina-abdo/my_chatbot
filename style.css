@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.chatbot {
+  background: #fff;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+              0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+.chatbot header {
+  position: relative;
+  background: #0093E9;
+  background: linear-gradient(90deg, rgba(0,147,233,1) 0%, rgba(0,255,255,1) 100%);
+  padding: 15px 20px;
+  border-radius: 8px 8px 0 0;
+}
+
+.chatbot header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.chatbot header .close-btn {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  color: #ccc;
+  font-size: 1.5rem;
+}
+
+.chatbot .chatbox {
+  padding: 20px;
+}
+
+.chatbot .chatbox li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.chatbot .chatbox li .chat-content {
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 0 8px 8px;
+}
+
+.chatbot .chatbox li .chat {
+  display: flex;
+  align-items: flex-end;
+}
+
+.chatbot .chatbox li .incoming {
+  justify-content: flex-start;
+}
+
+.chatbot .chatbox li .incoming .chat-content {
+  background: #e1f5fe;
+}
+
+.chatbot .chatbox li .outgoing {
+  justify-content: flex-end;
+}
+
+.chatbot .chatbox li .outgoing .chat-content {
+  background: #0093E9;
+  background: linear-gradient(90deg, rgba(0,147,233,1) 0%, rgba(0,255,255,1) 100%);
+  color: #fff;
+}
+
+.chatbot .chat-input {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+}
+
+.chatbot .chat-input textarea {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  resize: none;
+  background: #f7f7f7;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.chatbot .chat-input button {
+  background: #0093E9;
+  background: linear-gradient(90deg, rgba(0,147,233,1) 0%, rgba(0,255,255,1) 100%);
+  border: none;
+  outline: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
